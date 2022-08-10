@@ -7,13 +7,11 @@
 :root {
   --background: #FFEDD5;
   --text: #2D2C2A;
-  --description: rgba(0, 0, 0, 0.6);
   --primary-color: #FED7AA;
 }
 
 body {
   background: var(--background);
-  color: var(--text);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -21,6 +19,12 @@ ul {
   list-style: none;
 }
 
+/* HEADER */
+h1, h2, h3, .price {
+  font-family: 'Roboto Serif', serif;
+  text-transform: uppercase;
+  color: var(--text);
+}
 /* HEADER */
 header {
   padding: 32px 0;
@@ -34,8 +38,9 @@ section {
 }
 
 header h1 {
-  font-family: 'Roboto Serif', serif;
   margin-bottom: 4px;
+  font-size: 28px;
+  line-height: 33px;
 }
 
 header h1 span {
@@ -43,7 +48,10 @@ header h1 span {
 }
 
 header p {
-  color: var(--description);
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* SECTION */
@@ -57,10 +65,7 @@ section h2 {
  text-align: center;
 
  margin-bottom: 24px;
-}
-
-section p {
-  color: var(--description);
+ font-size: 18px;
 }
 
 ul li {
@@ -74,5 +79,13 @@ li .details {
 
 .details h3 {
   margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.details p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 24px;
 }
 
